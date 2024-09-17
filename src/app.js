@@ -1,1 +1,5 @@
-
+const app = {
+    
+  };
+  
+  export { app }; 
