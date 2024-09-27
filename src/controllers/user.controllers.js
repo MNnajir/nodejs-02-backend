@@ -109,7 +109,7 @@ const loginUser = asyncHandler(async (req, res) => {
     });
 
     if (!user) {
-        throw new ApiError(404, "User doest not exits")
+        throw new ApiError(404, "User does not exist")
     }
 
     const isPasswordValid = await user.isPasswordValid(password)
